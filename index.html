@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Fluency Calculator</title>
+		<meta name="description" content="Calculate reading or speaking fluency quickly and easily">
+		<meta name="keywords" content="speech language pathology, slp, slp apps, reading fluency, speaking fluency, fluency calculator, percent fluency">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Mono" rel="stylesheet">
 		<link rel="stylesheet" href="./css/main.css" type="text/css"/>
+		<link rel="icon" href="./img/favicon.png">
 	</head>
 	<body>
+		<main>
+			<h1>Fluency Calculator</h1>
+			<p>Calculate reading or speaking fluency quickly and easily</p>
+			<form class="" action="index.html" method="post">
+				<input type="text" name="" value="Fluent syllables" class="counterTitle">
+				<button type="button" id="aMinusOne" class="plusMinus leftButton" name="aMinusOne">-</button>
+				<div class="screen" id="aScreen"></div>
+				<button type="button" id="aPlusOne" class="plusMinus rightButton" name="aPlusOne">+</button>
+				<button type="button" id="aClear" class="clear" name="aClear">Clear</button>
+
+				<input type="text" name="" value="Disfluent syllables" class="counterTitle">
+				<button type="button" id="bMinusOne" class="plusMinus leftButton" name="bMinusOne">-</button>
+				<div class="screen" id="bScreen"></div>
+				<button type="button" id="bPlusOne" class="plusMinus rightButton" name="bPlusOne">+</button>
+				<button type="button" id="bClear" class="clear" name="bClear">Clear</button>
+
+				<div class="outputLabel">Fluency score:</div>
+				<div id="aFraction" class="output"></div>
+				<div id="aPercent" class="output"></div>
+				<div class="outputLabel">Disfluency score:</div>
+				<div id="bFraction" class="output"></div>
+				<div id="bPercent" class="output"></div>
+				<button type="button" id="clearAll" class="clear" name="clearAll">Clear All</button>
+			</form>
+		</main>
 
 		<script src="./js/main.js"></script>
 	</body>

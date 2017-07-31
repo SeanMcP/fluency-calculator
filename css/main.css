@@ -1,3 +1,89 @@
 body {
-	
+
+}
+body * {
+	color: #37474F;
+}
+h1, p, input, button, .outputLabel {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+main {
+	width: 98%;
+	margin: 0 auto;
+	max-width: 600px;
+}
+input {
+	font-size: 1.25em;
+	border: none;
+	padding: 10px 0;
+}
+.screen, .output {
+	font-family: 'Roboto Mono', monospace;
+}
+form {
+	display: flex;
+	flex-flow: row wrap;
+}
+.leftButton {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.rightButton {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.counterTitle {
+	flex: 1 1 100%;
+}
+.plusMinus {
+	flex: 1 1 20%;
+	font-weight: 700;
+	font-size: 2em;
+	padding: 20px 0;
+	color: white;
+	border: none;
+	/*background: #E57373;*/
+	background: linear-gradient(#EF9A9A, #E57373);
+	/*transition: all 0.1s ease-in-out;*/
+}
+.plusMinus:hover {
+	background: #EF9A9A;
+}
+.plusMinus:active {
+	background: #E57373;
+}
+.screen {
+	border-top: 1px solid #ECEFF1;
+	border-bottom: 1px solid #CFD8DC;
+	flex: 1 1 50%;
+	font-size: 2em;
+	padding: 16px 0;
+	text-align: center;
+}
+.clear {
+	flex: 1 1 100%;
+	background: linear-gradient(#ECEFF1, #CFD8DC);
+	color: #455A64;
+	border: none;
+	margin: 10px 0 20px;
+	padding: 10px 0;
+	font-size: 1em;
+	border-radius: 5px;
+}
+.clear:hover {
+	background: #ECEFF1;
+	color: #546E7A;
+}
+.clear:active {
+	background: #CFD8DC;
+}
+.outputLabel {
+	flex: 0 0 30%;
+}
+.output {
+	flex: 1 1 30%;
+	text-align: right;
+	height: 20px;
+	margin: 0 0 10px;
+	font-size: 1em;
 }
