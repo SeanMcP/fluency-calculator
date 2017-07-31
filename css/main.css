@@ -11,6 +11,7 @@ main {
 	width: 98%;
 	margin: 0 auto;
 	max-width: 600px;
+	padding-bottom: 40px;
 }
 input {
 	font-size: 1.25em;
@@ -86,4 +87,32 @@ form {
 	height: 20px;
 	margin: 0 0 10px;
 	font-size: 1em;
+}
+footer {
+	text-align: center;
+	width: 100%;
+	background: #333;
+	position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer a {
+	padding: 0.5em 0 0.25em;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.4);
+}
+footer img {
+	height: 1.25em;
+	opacity: 0.25;
+}
+footer img:hover {
+	opacity: 0.5;
+}
+footer img:active {
+	opacity: 0.3;
 }
