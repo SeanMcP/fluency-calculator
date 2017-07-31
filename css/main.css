@@ -4,7 +4,7 @@ body {
 body * {
 	color: #37474F;
 }
-h1, p, input, button, .outputLabel {
+h1, p, h2, button, .outputLabel {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 main {
@@ -13,10 +13,12 @@ main {
 	max-width: 600px;
 	padding-bottom: 40px;
 }
-input {
+h2 {
+	font-weight: normal;
 	font-size: 1.25em;
 	border: none;
 	padding: 20px 0 10px;
+	margin: 0;
 }
 #aTitle {
 	padding-top: 10px;
