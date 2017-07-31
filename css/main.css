@@ -16,7 +16,10 @@ main {
 input {
 	font-size: 1.25em;
 	border: none;
-	padding: 10px 0;
+	padding: 20px 0 10px;
+}
+#aTitle {
+	padding-top: 10px;
 }
 .screen, .output {
 	font-family: 'Roboto Mono', monospace;
@@ -24,6 +27,7 @@ input {
 form {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 .leftButton {
 	border-top-left-radius: 10px;
@@ -62,12 +66,12 @@ form {
 	text-align: center;
 }
 .clear {
-	flex: 1 1 100%;
+	flex: 1 100%;
 	background: linear-gradient(#ECEFF1, #CFD8DC);
 	color: #455A64;
 	border: none;
-	margin: 10px 0 20px;
-	padding: 10px 0;
+	margin: 10px 0 0;
+	padding: 5px 0;
 	font-size: 1em;
 	border-radius: 5px;
 }
@@ -79,13 +83,17 @@ form {
 	background: #CFD8DC;
 }
 .outputLabel {
-	flex: 0 0 30%;
+	flex: 0 0 50%;
+	margin: 20px 0 0;
+}
+#aFraction, #bFraction {
+	text-align: left;
 }
 .output {
-	flex: 1 1 30%;
+	flex: 1 1 25%;
 	text-align: right;
 	height: 20px;
-	margin: 0 0 10px;
+	margin: 20px 0 10px;
 	font-size: 1em;
 }
 footer {

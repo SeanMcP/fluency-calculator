@@ -14,17 +14,15 @@
 			<h1>Fluency Calculator</h1>
 			<p>Calculate reading or speaking fluency quickly and easily</p>
 			<form class="" action="index.html" method="post">
-				<input type="text" name="" value="Fluent syllables" class="counterTitle">
+				<input type="text" id="aTitle" name="" value="Fluent syllables" class="counterTitle">
 				<button type="button" id="aMinusOne" class="plusMinus leftButton" name="aMinusOne">-</button>
 				<div class="screen" id="aScreen"></div>
 				<button type="button" id="aPlusOne" class="plusMinus rightButton" name="aPlusOne">+</button>
-				<button type="button" id="aClear" class="clear" name="aClear">Clear</button>
 
-				<input type="text" name="" value="Disfluent syllables" class="counterTitle">
+				<input type="text" id="bTitle" name="" value="Disfluent syllables" class="counterTitle">
 				<button type="button" id="bMinusOne" class="plusMinus leftButton" name="bMinusOne">-</button>
 				<div class="screen" id="bScreen"></div>
 				<button type="button" id="bPlusOne" class="plusMinus rightButton" name="bPlusOne">+</button>
-				<button type="button" id="bClear" class="clear" name="bClear">Clear</button>
 
 				<div class="outputLabel">Fluency score:</div>
 				<div id="aFraction" class="output"></div>
@@ -32,7 +30,7 @@
 				<div class="outputLabel">Disfluency score:</div>
 				<div id="bFraction" class="output"></div>
 				<div id="bPercent" class="output"></div>
-				<button type="button" id="clearAll" class="clear" name="clearAll">Clear All</button>
+				<button type="button" id="clearAll" class="clear" name="clearAll">Clear</button>
 			</form>
 		</main>
 		<footer id="mainFooter">

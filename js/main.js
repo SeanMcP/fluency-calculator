@@ -13,34 +13,34 @@ bScreen.innerHTML = bValue;
 
 function aButton(a, b){
   aScreen.innerHTML = a;
-  aFraction.innerHTML = a + " / " + (a + b);
+  aFraction.innerHTML = a + "/" + (a + b);
   let aPercVal = a / (a + b) * 100;
   aPercent.innerHTML = aPercVal.toFixed(2) + "%";
 }
 
 function bButton(a, b) {
   bScreen.innerHTML = b;
-  bFraction.innerHTML = b + " / " + (a + b);
+  bFraction.innerHTML = b + "/" + (a + b);
   let bPercVal = b / (a + b) * 100;
   bPercent.innerHTML = bPercVal.toFixed(2) + "%";
 }
 function outputTable(a, b){
   aScreen.innerHTML = a;
-  aFraction.innerHTML = a + " / " + (a + b);
+  aFraction.innerHTML = a + "/" + (a + b);
   let aPercVal = a / (a + b) * 100;
   aPercent.innerHTML = aPercVal.toFixed(2) + "%";
 
   bScreen.innerHTML = b;
-  bFraction.innerHTML = b + " / " + (a + b);
+  bFraction.innerHTML = b + "/" + (a + b);
   let bPercVal = b / (a + b) * 100;
   bPercent.innerHTML = bPercVal.toFixed(2) + "%";
 }
-function clearOutput() {
-  aFraction.innerHTML = "";
-  bFraction.innerHTML = "";
-  aPercent.innerHTML = "";
-  bPercent.innerHTML = "";
-}
+// function clearOutput() {
+//   aFraction.innerHTML = "";
+//   bFraction.innerHTML = "";
+//   aPercent.innerHTML = "";
+//   bPercent.innerHTML = "";
+// }
 
 aPlusOne.addEventListener('click', function(){
   aValue++;
@@ -48,11 +48,6 @@ aPlusOne.addEventListener('click', function(){
 });
 aMinusOne.addEventListener('click', function(){
   aValue--;
-  outputTable(aValue, bValue);
-});
-aClear.addEventListener('click', function(){
-  aValue = 0;
-  aScreen.innerHTML = aValue;
   outputTable(aValue, bValue);
 });
 
@@ -64,11 +59,7 @@ bMinusOne.addEventListener('click', function(){
   bValue--;
   outputTable(aValue, bValue);
 });
-bClear.addEventListener('click', function(){
-  bValue = 0;
-  bScreen.innerHTML = bValue;
-  outputTable(aValue, bValue);
-});
+
 clearAll.addEventListener('click', function(){
   aValue = 0;
   bValue = 0;
