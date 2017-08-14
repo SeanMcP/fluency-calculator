@@ -1,5 +1,56 @@
-body {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** BEGIN STYLES *****/
+
+body {
+	margin: 0 10px;
 }
 body * {
 	color: #37474F;
@@ -8,20 +59,21 @@ h1, p, h2, button, .outputLabel {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 main {
-	width: 98%;
-	margin: 0 auto;
+	width: 100%;
+	margin: 10px auto 20px;
 	max-width: 600px;
-	padding-bottom: 40px;
+}
+h1 {
+	font-size: 1.8em;
+	font-weight: 700;
+	text-align: center;
 }
 h2 {
-	font-weight: normal;
-	font-size: 1.25em;
 	border: none;
+	font-size: 1.1em;
+	font-weight: normal;
 	padding: 20px 0 10px;
-	margin: 0;
-}
-#aTitle {
-	padding-top: 10px;
+	text-align: center;
 }
 .screen, .output {
 	font-family: 'Roboto Mono', monospace;
@@ -43,15 +95,14 @@ form {
 	flex: 1 1 100%;
 }
 .plusMinus {
+	border: none;
 	flex: 1 1 20%;
 	font-weight: 700;
 	font-size: 2em;
-	padding: 20px 0;
+	margin: 0;
+	padding: 0.5em 0;
 	color: white;
-	border: none;
-	/*background: #E57373;*/
 	background: linear-gradient(#EF9A9A, #E57373);
-	/*transition: all 0.1s ease-in-out;*/
 }
 .plusMinus:hover {
 	background: #EF9A9A;
@@ -64,7 +115,7 @@ form {
 	border-bottom: 1px solid #CFD8DC;
 	flex: 1 1 50%;
 	font-size: 2em;
-	padding: 16px 0;
+	padding: 0.6em 0 0.4em;
 	text-align: center;
 }
 .clear {
@@ -72,7 +123,7 @@ form {
 	background: linear-gradient(#ECEFF1, #CFD8DC);
 	color: #455A64;
 	border: none;
-	margin: 10px 0 0;
+	margin: 0;
 	padding: 5px 0;
 	font-size: 1em;
 	border-radius: 5px;
@@ -85,7 +136,7 @@ form {
 	background: #CFD8DC;
 }
 .outputLabel {
-	flex: 0 0 50%;
+	flex: 0 0 46%;
 	margin: 20px 0 0;
 }
 #aFraction, #bFraction {
@@ -99,25 +150,25 @@ form {
 	font-size: 1em;
 }
 footer {
-	text-align: center;
-	width: 100%;
+	align-items: center;
 	background: #333;
 	position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	text-align: center;
+	width: 100%;
 }
 footer a {
-	padding: 0.5em 0 0.25em;
-	text-decoration: none;
 	color: rgba(255, 255, 255, 0.4);
+	text-decoration: none;
 }
 footer img {
-	height: 1.25em;
+	height: 20px;
+	margin: 10px 0 7px;
 	opacity: 0.25;
 }
 footer img:hover {

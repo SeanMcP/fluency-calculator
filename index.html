@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 		<title>Fluency Calculator</title>
 		<meta name="description" content="Calculate reading or speaking fluency quickly and easily">
 		<meta name="keywords" content="speech language pathology, slp, slp apps, reading fluency, speaking fluency, fluency calculator, percent fluency">
@@ -12,24 +12,23 @@
 	<body>
 		<main>
 			<h1>Fluency Calculator</h1>
-			<p>Calculate reading or speaking fluency quickly and easily</p>
 			<form class="" action="index.html" method="post">
 				<h2 id="aTitle" class="counterTitle">Fluent Syllables</h2>
 				<button type="button" id="aMinusOne" class="plusMinus leftButton" name="aMinusOne">-</button>
-				<div class="screen" id="aScreen"></div>
+				<div class="screen" id="aScr"></div>
 				<button type="button" id="aPlusOne" class="plusMinus rightButton" name="aPlusOne">+</button>
 
 				<h2 id="bTitle" class="counterTitle">Disfluent Syllables</h2>
 				<button type="button" id="bMinusOne" class="plusMinus leftButton" name="bMinusOne">-</button>
-				<div class="screen" id="bScreen"></div>
+				<div class="screen" id="bScr"></div>
 				<button type="button" id="bPlusOne" class="plusMinus rightButton" name="bPlusOne">+</button>
 
 				<div class="outputLabel">Fluency score:</div>
-				<div id="aFraction" class="output"></div>
-				<div id="aPercent" class="output"></div>
+				<div id="aFrac" class="output"></div>
+				<div id="aPerc" class="output"></div>
 				<div class="outputLabel">Disfluency score:</div>
-				<div id="bFraction" class="output"></div>
-				<div id="bPercent" class="output"></div>
+				<div id="bFrac" class="output"></div>
+				<div id="bPerc" class="output"></div>
 				<button type="button" id="clearAll" class="clear" name="clearAll">Clear</button>
 			</form>
 		</main>

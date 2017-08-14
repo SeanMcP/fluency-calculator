@@ -1,12 +1,12 @@
 let aValue = 0;
 let bValue = 0;
 
-let aScreen = document.getElementById("aScreen");
-let bScreen = document.getElementById("bScreen");
-let aFraction = document.getElementById("aFraction");
-let aPercent = document.getElementById("aPercent");
-let bFraction = document.getElementById("bFraction");
-let bPercent = document.getElementById("bPercent");
+let aScreen = document.getElementById("aScr");
+let bScreen = document.getElementById("bScr");
+let aFraction = document.getElementById("aFrac");
+let aPercent = document.getElementById("aPerc");
+let bFraction = document.getElementById("bFrac");
+let bPercent = document.getElementById("bPerc");
 
 aScreen.innerHTML = aValue;
 bScreen.innerHTML = bValue;
